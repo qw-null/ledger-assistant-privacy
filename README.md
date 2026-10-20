@@ -1,8 +1,8 @@
 # 智能台账助手隐私政策
 
-科研院智能台账助手（aTrust版）的独立隐私政策网站，适用版本 1.3.0。
+智能台账助手（aTrust版）的独立隐私政策网站，适用版本 1.3.0。
 
-- 发布内容：index.html 与 .nojekyll。
+- 发布内容：index.html、assets/ 下的 Logo 与 .nojekyll。
 - 托管方式：GitHub Pages，main 分支的仓库根目录。
 - 联系邮箱：qinweirz@qq.com。
 - 无依赖、无构建步骤、无统计脚本。
