@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="科研院智能台账助手（aTrust版）隐私政策：账号、报销数据处理、保存方式及用户选择。">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>隐私政策 · 科研院智能台账助手（aTrust版）</title>
+  <style>
+    :root{color-scheme:light;--ink:#172638;--muted:#526171;--line:#dce4ec;--blue:#155b99}
+    *{box-sizing:border-box}
+    body{margin:0;background:#f4f7fa;color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.85}
+    main{max-width:880px;margin:48px auto;padding:44px 48px;background:#fff;border:1px solid var(--line);border-radius:12px}
+    .label{margin:0;color:var(--blue);font-size:14px;letter-spacing:.06em}
+    h1{margin:10px 0 8px;font-size:32px;line-height:1.4}h2{margin:32px 0 12px;font-size:21px;line-height:1.5}
+    p,li,td,th{font-size:15px}p{margin:12px 0}.meta,.foot{color:var(--muted);font-size:14px}
+    .lead{padding:16px 20px;background:#f0f6fc;border-left:3px solid var(--blue);border-radius:0 6px 6px 0}
+    nav{margin:24px 0;padding:16px 20px;border:1px solid var(--line);border-radius:8px}
+    nav a{display:inline-block;margin:3px 18px 3px 0}a{color:var(--blue);overflow-wrap:anywhere}
+    ul,ol{padding-left:24px}li+li{margin-top:8px}table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:12px}th{background:#f5f8fc}
+    footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
+    @media(max-width:620px){main{margin:0;padding:28px 20px;border:0;border-radius:0}h1{font-size:26px}h2{font-size:20px}th,td{padding:9px;font-size:14px}}
+    @media print{body{background:white}main{max-width:none;margin:0;border:0;padding:0}nav{display:none}a{color:inherit}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="label">科研院智能台账助手（aTrust版）</p>
+    <h1>隐私政策</h1>
+    <p class="meta">更新及生效日期：2026 年 10 月 20 日 · 适用版本：1.3.0</p>
+    <p class="lead">本扩展面向具有相应业务权限的企业用户，用于辅助生成科研项目差旅费支出台账。业务服务位于企业内网，使用前需连接 aTrust 并登录相应业务系统。本政策网页可在公网访问，不提供内网访问或业务登录功能。</p>
+  </header>
+  <nav aria-label="政策目录">
+    <a href="#data">处理哪些信息</a><a href="#transfer">用途与接收方</a><a href="#storage">保存方式</a><a href="#choices">您的选择</a><a href="#contact">联系我们</a>
+  </nav>
+  <section id="data">
+    <h2>一、我们处理哪些信息</h2>
+    <table>
+      <thead><tr><th scope="col">信息类别</th><th scope="col">触发方式及用途</th></tr></thead>
+      <tbody>
+        <tr><td>业务账号信息</td><td>在扩展启用且打开其匹配的综合门户或报销系统页面时，扩展会尝试读取页面已登录用户信息，包括账号标识。综合门户读取到的账号会用于向企业台账服务申请登录凭证。该处理可能在页面加载时自动发生，不以点击上传按钮为前提。</td></tr>
+        <tr><td>报销及项目信息</td><td>在符合条件的差旅费报销页面，扩展通过读取接口响应取得单据数据，用于展示确认表单。确认上传的内容包括报销人列表、创建时间、公司、部门、经办人、项目及合同相关信息、费用明细、单据 ID、标题、报销单号，以及科目、费用类型和金额。公司、人员、项目及费用等对象内的业务属性也可能随原接口对象一并上传。</td></tr>
+        <tr><td>页面地址及接口响应</td><td>扩展会读取当前标签页地址以在弹窗中显示当前网站，并根据页面地址和内容判断是否启用功能。当前版本的注入脚本还会读取当前业务页面的 Fetch 响应并通过页面内消息传递，范围可能涉及同一页面的其他接口；这些响应不会仅因被读取就自动上传至台账服务。扩展没有读取完整浏览历史的功能。</td></tr>
+        <tr><td>登录凭证和功能状态</td><td>台账服务返回的 Token 用于校验登录状态；扩展会保存账号、Token 及登录跳转状态，并在跳转台账站点时写入该站点的登录 Cookie。</td></tr>
+      </tbody>
+    </table>
+    <p>部分页面响应、账号信息、Token 或报销数据可能出现在当前版本的浏览器调试控制台日志中。本扩展未接入用于收集这些日志的远程日志服务；请勿将包含凭证或业务数据的日志公开或发送给无关人员。</p>
+  </section>
+  <section id="transfer">
+    <h2>二、信息的用途、传输与接收方</h2>
+    <p>上述信息用于识别业务用户、校验台账登录、展示报销单据、经用户确认后同步科研项目支出台账，以及提供业务跳转和插件版本检查。账号和确认后的报销数据通过 HTTPS 请求传输给企业科研项目台账服务。当前业务协议对用户名及报销上传内容还进行 AES 加密处理；该处理不替代业务系统的身份验证与权限控制。</p>
+    <p>报销数据在确认上传前用于页面内展示和处理；您取消本次确认不会触发该次报销数据上传。该选择不撤回已发生的账号读取、登录请求或此前已提交的数据。</p>
+    <p>接收和管理业务数据的是扩展连接的企业内网台账服务；相关综合门户及差旅报销系统也按照各自规则处理其业务数据。本扩展不以广告、出售个人信息或跨站画像为目的使用上述数据，也未接入广告或行为分析 SDK。企业内网服务的访问权限与业务记录管理由相应系统负责。</p>
+    <p>本政策网站独立托管于 GitHub Pages，不接收插件报销数据或登录 Token。GitHub 为提供网站托管服务，可能按照其隐私声明处理访问 IP、请求及技术日志等信息，详见 <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 隐私声明</a>。本网页不使用第三方统计脚本、广告、表单或外部字体。</p>
+  </section>
+  <section id="storage">
+    <h2>三、信息保存与安全</h2>
+    <ul>
+      <li>账号、Token 和跳转标志保存在扩展的浏览器本地存储中。当前版本没有为这些本地项目设置统一的自动清除期限，它们可能在关闭浏览器后继续保留，直至被更新、移除或清除。</li>
+      <li>扩展不将完整报销响应主动写入扩展本地存储，响应、表单及队列中的数据在页面内存中处理；刷新或关闭有关页面通常会结束该页面的内存状态。调试日志及浏览器工具的保留行为取决于浏览器设置。</li>
+      <li>台账站点的登录 Cookie 由浏览器按站点 Cookie 规则保存。移除扩展不保证自动清除该站点 Cookie，也不会代替服务器注销登录。</li>
+      <li>上传后形成的业务记录由企业台账系统按适用的业务制度和法律要求保存。具体保留期限、备份及删除流程请通过下方联系方式向维护者和业务系统负责人确认，本政策不承诺未经确认的统一期限。</li>
+      <li>扩展通过 HTTPS 与配置的企业服务通信。请仅在有权访问的设备、账号和网络环境中使用，并保护设备、浏览器及业务登录凭证。</li>
+    </ul>
+  </section>
+  <section id="choices">
+    <h2>四、您的选择与权利</h2>
+    <ol>
+      <li><strong>决定是否上传：</strong>在报销确认界面核对数据，选择确定或取消。同步后的更正请通过台账系统办理。</li>
+      <li><strong>停止后续处理：</strong>在 Microsoft Edge 扩展管理页停用或移除本扩展，并刷新或关闭已打开且注入过脚本的业务页面。已发出的网络请求和已上传的业务记录不能通过停用自动撤回。</li>
+      <li><strong>清除本地信息：</strong>移除扩展可清除其扩展本地存储；台账站点 Cookie 需另外通过 Edge 的站点数据设置清除。完整退出还应按需要退出综合门户、台账系统及 aTrust。</li>
+      <li><strong>访问、更正或删除：</strong>如需了解、查阅、更正或申请删除与您相关的信息，请联系下方邮箱。我们会结合企业业务系统的权限、适用法律和必要的身份核实处理或协助转交相关负责人；不保证删除依法或依制度必须保留的记录。</li>
+    </ol>
+    <p>报销信息可能涉及共同报销人、经办人等其他人员。请依企业制度及适用要求处理这些信息，仅在具备相应权限时上传，不要提交与台账目的无关的数据。</p>
+  </section>
+  <section>
+    <h2>五、适用人群与政策变更</h2>
+    <p>本扩展用于企业科研报销工作场景，不面向儿童提供服务。功能或数据处理方式发生变化时，我们会更新本政策并注明日期；应以您实际安装的版本及适用政策为准。需要额外告知或取得同意的事项应按适用要求处理。</p>
+  </section>
+  <section id="contact">
+    <h2>六、联系我们</h2>
+    <p>关于本扩展、个人信息处理或本政策的问题，请联系扩展维护者：<a href="mailto:qinweirz@qq.com">qinweirz@qq.com</a>。</p>
+    <p>联系时请说明所用扩展版本、问题和必要的业务背景。请勿通过邮件发送密码、Token、加密密钥或完整敏感报销材料。</p>
+  </section>
+  <footer><p class="foot">本页面仅发布隐私政策；不包含插件源码、环境变量、内网凭证或业务数据。使用 Microsoft Edge 扩展不代表微软运营或管理企业台账服务。</p></footer>
+</main>
+</body>
+</html>
